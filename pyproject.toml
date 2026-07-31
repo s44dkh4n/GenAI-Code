@@ -1,0 +1,44 @@
+[project]
+name = "projects"
+version = "0.1.0"
+description = "Advanced RAG and NLP Workspace"
+readme = "README.md"
+# Cap the Python version to prevent uv from resolving for 3.13+
+requires-python = "==3.13.10"
+
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "chromadb>=0.5.0",               # Bypasses old 1.x stream bugs
+    "faiss-cpu>=1.9.0",              # Verified stable for modern environments
+    "huggingface-hub>=0.28.0",
+    "langchain>=0.3.0",              # Modern v0.3 baseline eliminates deprecation spam
+    "langchain-chroma>=0.2.0",
+    "langchain-community>=0.3.0",
+    "langchain-huggingface>=0.1.0",
+    "langchain-text-splitters>=0.3.0",
+    "lxml>=5.2.0",
+    "numpy>=2.1.0",          # Lock to <2.0.0 if older sub-dependencies break on Numpy 2
+    "pandas>=2.2.0",
+    "pypdf>=5.0.0",
+    "python-docx>=1.1.0",
+    "python-dotenv>=1.0.1",
+    "scikit-learn>=1.5.0",
+    "streamlit>=1.38.0",
+    "torch>=2.4.0",                  # Robust, fully compiled wheel for 3.12
+    "transformers>=4.44.0",
+    "rank-bm25>=0.2.2",
+    "langsmith>=0.1.30",
+    "langchain-mistralai>=0.2.0",
+    "langchain-experimental>=0.3.0",
+    "cohere>=5.11.0",
+    "pypdfium2==5.12.1",             # Fixed version to clear the yanked setup warning
+    "python-magic-bin>=0.4.14",
+    "unstructured[all-docs]>=0.24.1",
+    "unstructured-inference>=1.6.13",
+    "jupyter>=1.1.1",
+    "ipykernel>=7.3.0",
+    "langchain-openai>=1.4.0",
+    "sentence-transformers>=5.6.1",
+    "nltk>=3.10.0",
+    "langchain-cohere>=0.6.0",
+]

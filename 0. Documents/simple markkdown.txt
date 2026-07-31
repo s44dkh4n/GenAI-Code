@@ -1,0 +1,53 @@
+# Git and GitHub Basics: A Beginner's Guide
+
+This guide covers the essential concepts, commands, and workflows you need to start version controlling your projects.
+
+## Table of Contents
+1. [Core Concepts](#core-concepts)
+2. [Essential Commands](#essential-commands)
+3. [Standard Workflow](#standard-workflow)
+4. [Best Practices](#best-practices)
+
+---
+
+## Core Concepts
+
+Understanding how Git thinks makes using it much easier:
+
+*   **Working Directory:** The local folder where you currently modify your files.
+*   **Staging Area:** A prep zone where you choose which changes to include in your next save.
+*   **Repository (Repo):** The final database containing your project's entire history.
+*   **Remote:** A version of your repository hosted on the internet (e.g., GitHub).
+
+---
+
+## Essential Commands
+
+Below is a cheat sheet of the most frequently used Git commands.
+
+### Repository Setup
+```bash
+git init                  # Initialize a new local Git repository
+git clone <remote-url>    # Download an existing repository from GitHub
+```
+
+### Making Changes
+```bash
+git status                # View modified files in your working directory
+git add <file-name>       # Add a specific file to the staging area
+git add .                 # Add all modified files to the staging area
+git commit -m "Message"   # Save staged changes with a descriptive message
+```
+
+### Sharing and Updating
+```bash
+git push origin main      # Upload your local commits to GitHub
+git pull origin main      # Fetch and merge the latest changes from GitHub
+```
+
+---
+
+## Standard Workflow
+
+Here is how a typical day of using Git looks in practice:
+

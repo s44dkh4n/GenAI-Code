@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production RAG Pipeline Specification</title>
+</head>
+<body>
+    <h1>Building Production-Grade RAG Systems</h1>
+    <p>Retrieval-Augmented Generation (RAG) enhances Large Language Models by fetching relevant contextual documents from external data stores before generating a response.</p>
+    
+    <h2>Data Ingestion and Parsing</h2>
+    <p>Data ingestion is the foundation of any reliable RAG architecture. raw documents must be processed clean of visual and structural noise before being embedded into vector spaces.</p>
+    
+    <h3>Document Chunking Strategies</h3>
+    <p>Semantic chunking preserves context boundaries better than simple character counts. Utilizing structural splitters like MarkdownHeaderTextSplitter or HTMLHeaderTextSplitter ensures logical grouping of concepts.</p>
+    
+    <h3>Handling Metadata</h3>
+    <p>Metadata such as source file name, heading hierarchy, and creation dates must be attached to every document chunk to enable metadata filtering during vector search.</p>
+    
+    <h2>Vector Search and Retrieval</h2>
+    <p>Once data is chunked, vectors are generated using embedding models and stored in vector databases for approximate nearest neighbor (ANN) retrieval.</p>
+    
+    <h3>Hybrid Search Implementation</h3>
+    <p>Combining dense vector search with sparse keyword search (BM25) prevents retrieval failures when dealing with technical jargon, serial numbers, or rare exact match queries.</p>
+    
+    <h3>Reranking Pipelines</h3>
+    <p>Initial vector search returns top-k candidates, which are then passed through a cross-encoder reranker model to re-order documents based on true semantic similarity to the query.</p>
+</body>
+</html>
