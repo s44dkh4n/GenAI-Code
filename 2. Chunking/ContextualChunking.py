@@ -163,4 +163,4 @@ if __name__ == "__main__":
     for i,query in enumerate(test_queries):
         print(f"Query {i+1} : {query}")
         response = execute_rag_pipeline(query= query, retriever= retriever)
-        print(f"{response\}\n")
+        print(f"{response}\n")
