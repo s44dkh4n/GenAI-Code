@@ -37,8 +37,10 @@ from langchain_classic.retrievers import (
 )
 from langchain_classic.retrievers.document_compressors import (
     CohereRerank, 
-    EmbeddingsFilter, 
+    EmbeddingsFilter,
     )
+from langchain_community.document_compressors import FlashrankRerank
+from langchain_classic.retrievers.document_compressors import flashrank_rerank
 from langchain_classic.retrievers.multi_vector import MultiVectorRetriever 
 from langchain_community.retrievers import BM25Retriever 
 
