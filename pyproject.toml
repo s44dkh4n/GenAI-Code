@@ -8,8 +8,7 @@ requires-python = "==3.13.10"
 
 dependencies = [
     "beautifulsoup4>=4.15.0",
-    "chromadb>=0.5.0",               # Bypasses old 1.x stream bugs
-    "faiss-cpu>=1.9.0",              # Verified stable for modern environments
+    "chromadb>=0.5.0",              # Verified stable for modern environments
     "huggingface-hub>=0.28.0",
     "langchain>=0.3.0",              # Modern v0.3 baseline eliminates deprecation spam
     "langchain-chroma>=0.2.0",
@@ -34,7 +33,6 @@ dependencies = [
     "pypdfium2==5.12.1",             # Fixed version to clear the yanked setup warning
     "python-magic-bin>=0.4.14",
     "unstructured[all-docs]>=0.24.1",
-    "unstructured-inference>=1.6.13",
     "jupyter>=1.1.1",
     "ipykernel>=7.3.0",
     "langchain-openai>=1.4.0",
@@ -42,4 +40,5 @@ dependencies = [
     "nltk>=3.10.0",
     "langchain-cohere>=0.6.0",
     "flashrank>=0.2.10",
+    "youtube-transcript-api>=1.2.4",
 ]

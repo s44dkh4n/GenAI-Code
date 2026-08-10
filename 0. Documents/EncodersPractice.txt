@@ -1,0 +1,209 @@
+# Topic 1: Machine Learning Basics
+# Supervised learning relies on labeled datasets to train algorithms for accurate prediction outputs.
+# Unsupervised learning finds hidden patterns and intrinsic groupings in unlabeled data automatically.
+# Reinforcement learning uses rewards and penalties to teach agents optimal decision-making strategies.
+# Model evaluation metrics like precision and recall quantify classifier accuracy on unseen validation data.
+# Overfitting occurs when a complex model memorizes noise instead of learning generalizable relationships.
+
+# Topic 2: Deep Neural Networks
+# Neural networks consist of interconnected node layers designed to mimic biological neuron communication.
+# Backpropagation calculates weight gradients backward through layers using the mathematical chain rule.
+# Activation functions introduce non-linear transformations allowing models to learn complex mappings.
+# Convolutional neural networks excel at extracting spatial feature hierarchies from visual inputs.
+# Recurrent neural networks process sequential data by maintaining hidden states across temporal steps.
+
+# Topic 3: Large Language Models
+# Large language models predict the next token in sequence using massive text datasets.
+# Self-attention mechanisms calculate dynamic context weights between distant words in input sequences.
+# Pre-training captures general linguistic knowledge before fine-tuning tailors performance to specific tasks.
+# Tokenization converts raw string inputs into discrete numerical ID representations for model processing.
+# Prompt engineering optimizes input query structures to elicit accurate responses without retraining models.
+
+# Topic 4: Generative AI Systems
+# Generative adversarial networks pit a generator against a discriminator to create synthetic content.
+# Variational autoencoders compress inputs into latent spaces before reconstructing high-fidelity outputs.
+# Diffusion models add noise to training data then iteratively reverse the process to generate images.
+# Temperature parameters control the randomness and creative variation of generated model outputs.
+# Hallucination refers to models generating confident yet factually incorrect or unsupported assertions.
+
+# Topic 5: Vector Databases
+# Vector databases store high-dimensional embeddings optimized for high-speed similarity searches.
+# Approximate nearest neighbor algorithms trade exact match precision for rapid querying performance.
+# Indexing strategies like HNSW structure vector space dimensions to optimize retrieval throughput speeds.
+# Metadata filtering restricts vector search spaces based on secondary structured domain properties.
+# Distance metrics such as cosine similarity compute geometric alignment between dense embeddings.
+
+# Topic 6: Information Retrieval
+# Information retrieval systems locate relevant documents within large unstructured text corpora.
+# Inverted indices map search keywords directly to matching document locations for rapid retrieval.
+# Term frequency inverse document frequency ranks document importance based on keyword specificity.
+# Precision measures the proportion of retrieved documents that directly satisfy the user search query.
+# Recall measures the total percentage of relevant corpus documents successfully returned by a query.
+
+# Topic 7: Semantic Search Engine
+# Semantic search algorithms interpret user query intent rather than matching exact string keywords.
+# Dense retrieval models map query strings and documents into unified high-dimensional vector spaces.
+# Bi-encoder architectures generate fixed-size vector representations for fast vector comparison operations.
+# Query expansion enriches initial search strings with synonyms to broaden initial candidate retrieval.
+# Hybrid search strategies combine sparse keyword matching with dense semantic embeddings for accuracy.
+
+# Topic 8: Cross-Encoder Reranking
+# Cross-encoders process query and document pairs simultaneously to generate precise relevance scores.
+# Full cross-attention enables full word token interactions between query and candidate passage texts.
+# Rerankers score a small candidate set retrieved by faster bi-encoder vector similarity methods.
+# Higher computational latency limits cross-encoders to reordering existing top-k search candidate lists.
+# Fine-tuning cross-encoder models on domain pairs improves custom reranking scoring performance.
+
+# Topic 9: Retrieval-Augmented Generation
+# Retrieval-augmented generation injects relevant document passages directly into language model prompts.
+# Vector stores query external knowledge bases to retrieve factual context for user prompts.
+# Semantic chunking splits large source documents into coherent contextual units for storage efficiency.
+# Grounding model responses with retrieved context minimizes factual hallucination in AI systems.
+# Reranking retrieved chunks ensures the highest-quality passages populate limited context windows.
+
+# Topic 10: Natural Language Processing
+# Natural language processing develops computational methods to analyze and manipulate human language.
+# Lemmatization reduces words to their base dictionary form using linguistic context and grammar rules.
+# Part-of-speech tagging categorizes word tokens into grammatical roles like nouns, verbs, and adjectives.
+# Named entity recognition isolates specific entity types like people, places, and organizations in text.
+# Sentiment analysis determines emotional polarity and opinion valence expressed within input text segments.
+
+# Topic 11: Transformer Architectures
+# Transformers replace sequential processing with parallel self-attention operations across sequence length.
+# Multi-head attention allows models to attend to information from different representation subspaces.
+# Positional encoding injects word order information directly into non-sequential vector inputs.
+# Encoder modules map input sequences into abstract representations containing full bidirectional context.
+# Decoder modules generate output sequences autoregressively while attending to encoder outputs.
+
+# Topic 12: Embeddings and Vector Spaces
+# Word embeddings map discrete words into continuous dense vector representations capturing semantic links.
+# Semantic closeness positions conceptually related words near each other in vector space dimensions.
+# Dimensionality reduction techniques project complex vector spaces down for efficient visualization.
+# Out-of-vocabulary handling uses subword tokenizers to embed unseen terms during model inferencing.
+# Embedding drift occurs when real-world language shifts away from training distribution semantics.
+
+# Topic 13: Search Engine Evaluation
+# Mean reciprocal rank evaluates search quality based on the rank position of the first relevant result.
+# Normalized discounted cumulative gain accounts for multi-level relevance scores and rank positions.
+# Relevancy judgments establish ground truth label pairs for benchmarking retrieval model accuracy.
+# Latency profiling measures retrieval and reranking speed performance under peak system workloads.
+# Benchmark datasets provide standardized reference queries to test information retrieval pipelines.
+
+# Topic 14: Agentic AI Systems
+# AI agents leverage language models to reason, plan actions, and execute multi-step task workflows.
+# Tool use allows agents to query APIs, search engines, and calculators to extend internal knowledge.
+# Memory modules store past interaction history and execution states for long-horizon task planning.
+# Action loops continuously observe environment feedback to adjust intermediate reasoning steps.
+# Multi-agent architectures coordinate specialized sub-agents to solve complex collaborative problems.
+
+# Topic 15: Fine-Tuning Models
+# Fine-tuning adapts pre-trained model weights using smaller targeted datasets for custom tasks.
+# Low-rank adaptation (LoRA) updates small rank decomposition matrices to reduce training memory load.
+# Parameter-efficient fine-tuning preserves base model weights while training tiny add-on adapter layers.
+# Catastrophic forgetting describes models losing pre-trained general knowledge when overfitted to new tasks.
+# Instruction tuning formats datasets as explicit command-response pairs to improve task execution.
+
+# Topic 16: Model Quantization
+# Quantization reduces model memory footprint by lowering weight precision from float32 to int8 or int4.
+# Post-training quantization converts precision after training completes with minimal accuracy loss.
+# Quantization-aware training simulates precision reduction errors during model training iterations.
+# Low-bit representations enable high-speed model deployment on edge devices with limited compute resources.
+# Memory bandwidth requirements drop significantly when running quantized model inference pipelines.
+
+# Topic 17: MLOps Infrastructure
+# MLOps establishes operational practices for continuous integration and deployment of ML models.
+# Model registries store versioned artifacts, metadata tracks, and lineage for deployment management.
+# Automated retraining pipelines trigger when data drift compromises live model prediction accuracy.
+# Containerization isolates model dependencies to ensure consistent runtime execution across cloud environments.
+# Inference endpoints scale compute resources dynamically based on incoming API traffic request volume.
+
+# Topic 18: Prompt Engineering Strategy
+# Chain-of-thought prompting forces models to generate step-by-step reasoning before final answers.
+# Few-shot prompting provides labeled task examples within the context window to guide output format.
+# System prompts define base behavior guidelines, persona roles, and safety constraints for models.
+# Negative constraints explicitly instruct models to avoid specific output structures or topics.
+# Context truncation trims input prompt length to avoid exceeding maximum model token limits.
+
+# Topic 19: Data Preprocessing
+# Data cleaning removes noise, duplicate records, and structural formatting errors from datasets.
+# Text normalization unifies capitalization, strips punctuation, and standardizes character encodings.
+# Stop-word removal filters out frequent words that carry minimal unique domain information.
+# Tokenization splits raw string streams into standardized subword chunks for neural model inputs.
+# Data deduplication eliminates redundant content to prevent dataset bias and training efficiency loss.
+
+# Topic 20: Software Engineering for AI
+# Modular software design isolates model inference, data processing, and user interface layers.
+# Asynchronous processing prevents slow model API calls from blocking main application execution threads.
+# Pydantic schemas enforce strict data validation and type checking on model inputs and outputs.
+# Unit testing verifies pipeline components independently to catch data schema breaking changes early.
+# Error handling strategies manage external API rate limits, timeouts, and unexpected model responses.
+
+# Topic 21: Database Systems
+# Relational databases structure data into strict schemas with foreign key relationships across tables.
+# Indexing speeds up query execution by maintaining efficient lookup structures like B-trees.
+# NoSQL databases offer flexible schemaless storage for document, key-value, and graph format data.
+# ACID properties guarantee transaction reliability, consistency, isolation, and durability guarantees.
+# Database sharding splits large datasets horizontally across multiple distinct hardware servers.
+
+# Topic 22: Graph Databases and Knowledge Graphs
+# Knowledge graphs organize entities and relationships as interconnected nodes and directed edges.
+# Graph databases query spatial connections between entities without expensive multi-table join operations.
+# Entity linking connects raw text mentions directly to unique canonical knowledge graph entries.
+# Graph retrieval-augmented generation retrieves multi-hop relationship context to answer complex queries.
+# Ontology definitions specify allowed entity classes and relationship types within domain graphs.
+
+# Topic 23: Cloud Infrastructure
+# Cloud computing provides scalable compute, storage, and networking resources on a pay-as-you-go model.
+# Serverless architectures run code execution on demand without requiring active server management.
+# Load balancers distribute incoming application traffic evenly across multiple server instances.
+# Infrastructure as code automates hardware provisioning using declarative configuration scripts.
+# Object storage offers scalable file storage for unstructured datasets, backups, and model artifacts.
+
+# Topic 24: Enterprise Search Architecture
+# Enterprise search integrates disparate data sources into a centralized searchable data index.
+# Role-based access controls restrict document retrieval based on user organizational permissions.
+# Document parsers extract raw text and metadata from varied formats like PDF, HTML, and Word.
+# Incremental indexing updates search indices continuously as source enterprise files are edited.
+# Federated search queries multiple distinct internal engines simultaneously and aggregates results.
+
+# Topic 25: AI Safety and Alignment
+# Alignment ensures artificial intelligence systems act in accordance with human values and intent.
+# Red teaming exposes model vulnerabilities through adversarial prompt testing and security probes.
+# Guardrail frameworks filter non-compliant user inputs and unsafe model generated text outputs.
+# Reinforcement learning from human feedback aligns model outputs with human preference choices.
+# Data privacy techniques prevent sensitive context information from leaking into model training sets.
+
+# Topic 26: Distributed Systems
+# Distributed systems coordinate multiple independent nodes over networks to act as single systems.
+# Consensus protocols like Raft ensure fault-tolerant state agreement across distributed clusters.
+# Horizontal scaling adds more machine nodes to handle growing computational workload demands.
+# Data replication copies records across nodes to improve system availability and data durability.
+# Network partition handling defines system behavior when communication between node clusters breaks down.
+
+# Topic 27: API Design and Standards
+# REST APIs use standard HTTP request methods to operate on defined system resource endpoints.
+# GraphQL allows clients to request exact data structures needed, eliminating over-fetching issues.
+# Rate limiting controls the number of API calls a client can make within designated timeframes.
+# Webhooks deliver real-time push notifications when asynchronous background system events complete.
+# API documentation specifies request parameter schemas, response structures, and authorization codes.
+
+# Topic 28: Model Monitoring and Observability
+# Observability tools track model latency, memory usage, and execution error rates in production.
+# Input drift detection flags when real-world production data distributions diverge from training data.
+# Output validation inspects model responses to ensure adherence to required operational schemas.
+# Logging captures raw prompts, context passages, and outputs for auditing system debugging tasks.
+# Cost tracking monitors token consumption across API endpoints to manage infrastructure budget spend.
+
+# Topic 29: Computer Vision Concepts
+# Computer vision enables machines to analyze and interpret visual context from digital images.
+# Object detection locates and classifies distinct objects within visual scenes using bounding boxes.
+# Semantic segmentation labels every pixel in an image with its corresponding object class type.
+# Feature extraction highlights salient image characteristics like edges, textures, and keypoints.
+# Optical character recognition transcribes visual text inside images into editable machine strings.
+
+# Topic 30: Code Generation Models
+# Code generation models translate natural language task prompts directly into functional source code.
+# Syntax validation checks generated code against language grammar rules before user output delivery.
+# Context-aware completion uses adjacent codebase files to supply relevant imports and function signatures.
+# Execution sandboxes run generated scripts safely within isolated environments to test functionality.
+# Static code analysis tools inspect generated code for security flaws and performance bugs.        
