@@ -22,6 +22,7 @@ from langchain_mistralai import MistralAIEmbeddings
 # 4. Language Models (LLMs for Generation)
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint 
 from langchain_mistralai import ChatMistralAI 
+from langchain_ollama import ChatOllama
 
 # 5. Storage Layer (Vector Databases & Key-Value Stores)
 from langchain_chroma import Chroma 
