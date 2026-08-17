@@ -5,4 +5,5 @@ chroma_db/
 .venv/
 __pycache__/
 temp/
-7. Flask API/
+FastAPI/
+Test.py

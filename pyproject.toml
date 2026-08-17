@@ -44,4 +44,6 @@ dependencies = [
     "langchain-ollama>=1.1.0",
     "fastapi>=0.141.1",
     "uvicorn>=0.52.1",
+    "ddgs>=9.15.0",
+    "pyowm>=3.5.0",
 ]
