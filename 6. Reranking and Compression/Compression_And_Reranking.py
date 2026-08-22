@@ -15,7 +15,7 @@ import os
 
 load_dotenv()
 
-loader = PyPDFLoader(r"D:\Course\Projects\0. Documents\RAG for NLP.pdf")
+loader = PyPDFLoader(r"GenAI\0. Documents\RAG for NLP.pdf")
 docs = loader.load()
 
 splitter = RecursiveCharacterTextSplitter(
