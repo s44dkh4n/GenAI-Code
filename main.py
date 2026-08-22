@@ -36,6 +36,10 @@ from langchain_classic.retrievers import (
     EnsembleRetriever, 
     ParentDocumentRetriever, 
 )
+
+from langchain_neo4j import Neo4jGraph, GraphCypherQAChain
+from langchain_experimental.graph_transformers import LLMGraphTransformer
+
 from langchain_classic.retrievers.document_compressors import (
     CohereRerank, 
     EmbeddingsFilter,
@@ -71,11 +75,7 @@ import os
 #     task="feature-extraction"
 # )
 
-# mistral_model = ChatMistralAI(
-#     model="mistral-small-latest",
-#     temperature=0.3
-# )
-
+# mistral_model = ChatMistralAI(model="mistral-large-latest", temperature=0)
 # embeddings = MistralAIEmbeddings(model="mistral-embed")
 
 # messages = ChatPromptTemplate.from_messages(

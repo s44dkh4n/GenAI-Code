@@ -6,4 +6,3 @@ chroma_db/
 __pycache__/
 temp/
 FastAPI/
-Test.py
