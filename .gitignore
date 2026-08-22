@@ -1,8 +1,5 @@
 .env
-uv.lock
 chroma_db/
 1. Data Preprocessing/dbv2/
-.venv/
 __pycache__/
 temp/
-FastAPI/
